@@ -22,6 +22,12 @@ Guests can browse and add to a cart (kept in the browser). When they sign in, it
 
 ---
 
+## Mobile app
+
+The [`mobile/`](mobile/) folder holds the Veyro app for iOS and Android (Expo / React Native). It uses the same Supabase project, the same Google accounts and the same `POST /api/checkout` endpoint as the website. Carts sync live in both directions through Supabase Realtime. See [mobile/README.md](mobile/README.md) to run it on a phone.
+
+---
+
 ## Setup
 
 ### 1. Install
@@ -94,6 +100,7 @@ supabase/
   schema.sql          tables, RLS policies, place_order() + mark_order_emailed() functions
   seed.sql            10 categories, 40 products
   update-product-photos.sql  one-off: adds photos to a database seeded before they existed
+  enable-cart-realtime.sql   one-off: live cart sync between website and app
   switch-to-naira.sql        one-off: converts a dollar-priced database to naira
 src/
   proxy.ts            refreshes the Supabase session; guards /checkout, /account, /orders
