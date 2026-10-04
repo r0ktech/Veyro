@@ -32,7 +32,7 @@ export function Footer({ categories }: { categories: Category[] }) {
         </ul>
       </div>
       <div className="border-t border-line">
-        <p className="container-page py-6 text-xs text-muted">© {new Date().getFullYear()} Veyro. A student project.</p>
+        <p className="container-page py-6 text-xs text-muted">© {new Date().getFullYear()} Veyro.</p>
       </div>
     </footer>
   );
