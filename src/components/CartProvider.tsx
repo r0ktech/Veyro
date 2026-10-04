@@ -122,6 +122,28 @@ export function CartProvider({ initialUserId, children }: { initialUserId: strin
     void load();
   }, [load]);
 
+  // Live sync: reload when this user's cart changes anywhere (another tab, the mobile app).
+  useEffect(() => {
+    if (!userId) return;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const reload = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => void load(), 150); // coalesce bursts, e.g. quick +/- taps
+    };
+    const channel = supabase
+      .channel(`cart:${userId}`)
+      .on("postgres_changes", { event: "*", schema: "public", table: "cart_items", filter: `user_id=eq.${userId}` }, reload)
+      // Realtime can't filter deletes, but their payload carries the primary key, which includes user_id.
+      .on("postgres_changes", { event: "DELETE", schema: "public", table: "cart_items" }, (payload) => {
+        if ((payload.old as { user_id?: string }).user_id === userId) reload();
+      })
+      .subscribe();
+    return () => {
+      clearTimeout(timer);
+      void supabase.removeChannel(channel);
+    };
+  }, [supabase, userId, load]);
+
   const setQuantity = useCallback(
     async (product: Product, quantity: number) => {
       const q = Math.max(0, Math.min(quantity, maxQuantity(product)));

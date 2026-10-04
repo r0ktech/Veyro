@@ -155,6 +155,21 @@ create policy "own order items read" on public.order_items for select using (
 );
 
 -- ---------------------------------------------------------------------
+-- Realtime: push cart changes to every signed-in device (website + app).
+-- ---------------------------------------------------------------------
+
+do $$
+begin
+  if exists (select 1 from pg_publication where pubname = 'supabase_realtime')
+     and not exists (
+       select 1 from pg_publication_tables
+       where pubname = 'supabase_realtime' and schemaname = 'public' and tablename = 'cart_items'
+     ) then
+    alter publication supabase_realtime add table public.cart_items;
+  end if;
+end $$;
+
+-- ---------------------------------------------------------------------
 -- Checkout: turn the signed-in user's cart into an order, atomically.
 -- Prices come from the products table (never from the client), stock is
 -- locked and decremented, and the cart is cleared.
