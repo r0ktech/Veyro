@@ -1,0 +1,362 @@
+[
+  {
+    "slug": "macbook-air-13-m4",
+    "name": "MacBook Air 13\" (M4)",
+    "file": "MacBook Air (13-inch, M4, Silver).jpg",
+    "author": "AzureSaturn",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:MacBook_Air_(13-inch,_M4,_Silver).jpg"
+  },
+  {
+    "slug": "macbook-air-15-m4",
+    "name": "MacBook Air 15\" (M4)",
+    "file": "MacBook Air (15-inch, M4, Silver).jpg",
+    "author": "AzureSaturn",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:MacBook_Air_(15-inch,_M4,_Silver).jpg"
+  },
+  {
+    "slug": "macbook-pro-14-m5",
+    "name": "MacBook Pro 14\" (M5)",
+    "file": "MacBook Pro (14-inch, M5, Space Black).jpg",
+    "author": "AzureSaturn",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:MacBook_Pro_(14-inch,_M5,_Space_Black).jpg"
+  },
+  {
+    "slug": "macbook-pro-16-m4-pro",
+    "name": "MacBook Pro 16\" (M4 Pro)",
+    "file": "MacBook Pro (16-inch, M4 Pro, Silver).jpg",
+    "author": "AzureSaturn",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:MacBook_Pro_(16-inch,_M4_Pro,_Silver).jpg"
+  },
+  {
+    "slug": "dell-xps-13",
+    "name": "Dell XPS 13",
+    "file": "Dell XPS 13 9350.jpg",
+    "author": "Green-Curtain",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dell_XPS_13_9350.jpg"
+  },
+  {
+    "slug": "lenovo-thinkpad-x1-carbon",
+    "name": "ThinkPad X1 Carbon Gen 13",
+    "file": "ThinkPad X1 Carbon gen5 (34993431802).jpg",
+    "author": "Tinh tế Photo",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:ThinkPad_X1_Carbon_gen5_(34993431802).jpg"
+  },
+  {
+    "slug": "asus-rog-zephyrus-g14",
+    "name": "ASUS ROG Zephyrus G14",
+    "file": "ASUS ROG Zephyrus 2026-08-15 G14.jpg",
+    "author": "P1898",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:ASUS_ROG_Zephyrus_2026-08-15_G14.jpg"
+  },
+  {
+    "slug": "hp-spectre-x360-14",
+    "name": "HP Spectre x360 14",
+    "file": "Hp Spectre x360.jpg",
+    "author": "Lokeish",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hp_Spectre_x360.jpg"
+  },
+  {
+    "slug": "iphone-17-pro-max",
+    "name": "iPhone 17 Pro Max",
+    "file": "Cosmic Orange iPhone 17 Pro Max.jpg",
+    "author": "Ahmad Ali Karim",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Cosmic_Orange_iPhone_17_Pro_Max.jpg"
+  },
+  {
+    "slug": "iphone-17-pro",
+    "name": "iPhone 17 Pro",
+    "file": "IPhone 17 Pro (2025-12-28).jpg",
+    "author": "Olgierd Rudak",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:IPhone_17_Pro_(2025-12-28).jpg"
+  },
+  {
+    "slug": "iphone-air",
+    "name": "iPhone Air",
+    "file": "Sky Blue iPhone Air.jpg",
+    "author": "Ahmad Ali Karim",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Sky_Blue_iPhone_Air.jpg"
+  },
+  {
+    "slug": "iphone-17",
+    "name": "iPhone 17",
+    "file": "Lavender iPhone 17.jpg",
+    "author": "Ahmad Ali Karim",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Lavender_iPhone_17.jpg"
+  },
+  {
+    "slug": "samsung-galaxy-s25-ultra",
+    "name": "Samsung Galaxy S25 Ultra",
+    "file": "Samsung Galaxy S25 Ultra Titanium Silverblue.jpg",
+    "author": "Alvis Jean",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg"
+  },
+  {
+    "slug": "google-pixel-10-pro",
+    "name": "Google Pixel 10 Pro",
+    "file": "Arrière du Google Pixel 10 Pro pierre de lune de 256 Go.jpg",
+    "author": "Fabe56",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Arri%C3%A8re_du_Google_Pixel_10_Pro_pierre_de_lune_de_256_Go.jpg"
+  },
+  {
+    "slug": "oneplus-13",
+    "name": "OnePlus 13",
+    "file": "OnePlus 13 back.jpg",
+    "author": "Maksdroider",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:OnePlus_13_back.jpg"
+  },
+  {
+    "slug": "samsung-galaxy-z-fold7",
+    "name": "Samsung Galaxy Z Fold7",
+    "file": "Samsung Galaxy Fold7 Main Screen (cropped).jpg",
+    "author": "Megapro17",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Fold7_Main_Screen_(cropped).jpg"
+  },
+  {
+    "slug": "lg-ultrafine-5k",
+    "name": "LG UltraFine 5K Display",
+    "file": "LG UltraFine 5K Display.jpg",
+    "author": "LG Electronics",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:LG_UltraFine_5K_Display.jpg"
+  },
+  {
+    "slug": "apple-pro-display-xdr",
+    "name": "Apple Pro Display XDR",
+    "file": "Apple Pro Display XDR and Mac Pro (2019 model) - 1.jpg",
+    "author": "KKPCW",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Apple_Pro_Display_XDR_and_Mac_Pro_(2019_model)_-_1.jpg"
+  },
+  {
+    "slug": "asus-proart-pa246q",
+    "name": "ASUS ProArt PA246Q",
+    "file": "Asus ProArt PA246Q monitor 2.JPG",
+    "author": "MKFI",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Asus_ProArt_PA246Q_monitor_2.JPG"
+  },
+  {
+    "slug": "apple-studio-display",
+    "name": "Apple Studio Display",
+    "file": "Apple Studio Display 2024.jpg",
+    "author": "Seasider53",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Apple_Studio_Display_2024.jpg"
+  },
+  {
+    "slug": "logitech-mx-keys-s",
+    "name": "Logitech MX Keys S",
+    "file": "Logitech MX Keys YR0073 Wireless Keyboard.jpg",
+    "author": "TaurusEmerald",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Logitech_MX_Keys_YR0073_Wireless_Keyboard.jpg"
+  },
+  {
+    "slug": "keychron-k8",
+    "name": "Keychron K8 Wireless Mechanical Keyboard",
+    "file": "Keychron K8 Non-Backlight Wireless Mechanical Keyboard - 52772912798.jpg",
+    "author": "Triple-green",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Keychron_K8_Non-Backlight_Wireless_Mechanical_Keyboard_-_52772912798.jpg"
+  },
+  {
+    "slug": "apple-magic-keyboard-touch-id",
+    "name": "Magic Keyboard with Touch ID",
+    "file": "Magic Keyboard with Touch ID for Mac models with Apple silicon - Swiss.jpg",
+    "author": "Dbirdz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Magic_Keyboard_with_Touch_ID_for_Mac_models_with_Apple_silicon_-_Swiss.jpg"
+  },
+  {
+    "slug": "logitech-g-pro-tkl",
+    "name": "Logitech G PRO TKL Keyboard",
+    "file": "Logitech G PRO TKL gaming keyboard - English (United States) layout.jpg",
+    "author": "AzureSaturn",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Logitech_G_PRO_TKL_gaming_keyboard_-_English_(United_States)_layout.jpg"
+  },
+  {
+    "slug": "logitech-mx-master-3s",
+    "name": "Logitech MX Master 3S",
+    "file": "Logitech MX Master 3S HS10.jpg",
+    "author": "Hayden Schiff",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Logitech_MX_Master_3S_HS10.jpg"
+  },
+  {
+    "slug": "razer-deathadder-elite",
+    "name": "Razer DeathAdder Elite",
+    "file": "Razer DeathAdder Elite-front oblique-ar 16to10-fs PNr°0465.jpg",
+    "author": "D-Kuru",
+    "license": "CC BY-SA 3.0 at",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Razer_DeathAdder_Elite-front_oblique-ar_16to10-fs_PNr%C2%B00465.jpg"
+  },
+  {
+    "slug": "apple-magic-mouse",
+    "name": "Apple Magic Mouse",
+    "file": "Magic Mouse.jpg",
+    "author": "Yutaka Tsutano from Lincoln, United States",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Magic_Mouse.jpg"
+  },
+  {
+    "slug": "logitech-g-pro-x-superlight-2",
+    "name": "Logitech G Pro X Superlight 2",
+    "file": "Logitech Pro X Superlight 2 sample 20231216.jpg",
+    "author": "Solomon203",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Logitech_Pro_X_Superlight_2_sample_20231216.jpg"
+  },
+  {
+    "slug": "sony-wh-1000xm3",
+    "name": "Sony WH-1000XM3",
+    "file": "Sony-WH-1000XM3-kabellose-Bluetooth-Noise-Cancelling-Kopfhoerer.3.jpg",
+    "author": "www.digitalpush.net",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sony-WH-1000XM3-kabellose-Bluetooth-Noise-Cancelling-Kopfhoerer.3.jpg"
+  },
+  {
+    "slug": "airpods-pro-2",
+    "name": "AirPods Pro (2nd generation)",
+    "file": "AirPods Pro (2nd generation).jpg",
+    "author": "Hajoon0102",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:AirPods_Pro_(2nd_generation).jpg"
+  },
+  {
+    "slug": "airpods-max",
+    "name": "AirPods Max",
+    "file": "Apple AirPods Max 3.jpg",
+    "author": "SimonWaldherr",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Apple_AirPods_Max_3.jpg"
+  },
+  {
+    "slug": "bose-quietcomfort-ultra-earbuds",
+    "name": "Bose QuietComfort Ultra Earbuds",
+    "file": "Bose QuietComfort Ultra Earbuds - 2.jpg",
+    "author": "Kyu3",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_Ultra_Earbuds_-_2.jpg"
+  },
+  {
+    "slug": "belkin-magsafe-2-in-1",
+    "name": "Belkin BoostCharge Pro 2-in-1 MagSafe Stand",
+    "file": "Belkin 2 in 1 MagSafe充電器.jpg",
+    "author": "KKPCW（Kyu3）",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Belkin_2_in_1_MagSafe%E5%85%85%E9%9B%BB%E5%99%A8.jpg"
+  },
+  {
+    "slug": "apple-96w-usb-c",
+    "name": "Apple 96W USB-C Power Adapter",
+    "file": "Apple 96W USB Type-C Power Adapter for new 16 inch MacBook Pro (49165128252).jpg",
+    "author": "Tony Webster from Minneapolis, Minnesota, United States",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Apple_96W_USB_Type-C_Power_Adapter_for_new_16_inch_MacBook_Pro_(49165128252).jpg"
+  },
+  {
+    "slug": "samsung-45w-super-fast",
+    "name": "Samsung 45W Super Fast Charger",
+    "file": "SAMSUNG EP-T4510 45W POWER ADAPER BLACK.jpg",
+    "author": "Dinkun Chen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:SAMSUNG_EP-T4510_45W_POWER_ADAPER_BLACK.jpg"
+  },
+  {
+    "slug": "anker-powercore-10000",
+    "name": "Anker PowerCore 10000",
+    "file": "Anker power bank and cable.jpg",
+    "author": "Saucy",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Anker_power_bank_and_cable.jpg"
+  },
+  {
+    "slug": "samsung-990-pro-2tb",
+    "name": "Samsung 990 PRO 2TB",
+    "file": "SAMSUNG M.2 NVMe SSD 990 PRO 4TB.jpg",
+    "author": "Dinkun Chen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg"
+  },
+  {
+    "slug": "wd-black-sn850x-1tb",
+    "name": "WD_BLACK SN850X 1TB",
+    "file": "Western Digital SN850X NVME solid state drive 8TB front side.jpg",
+    "author": "4300streetcar",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Western_Digital_SN850X_NVME_solid_state_drive_8TB_front_side.jpg"
+  },
+  {
+    "slug": "samsung-t9-portable-2tb",
+    "name": "Samsung T9 Portable SSD 2TB",
+    "file": "SAMSUNG PROTABLE SSD T5 EVO 8TB & SAMSUNG PROTABLE SSD T9 4TB FRONT SIDE.jpg",
+    "author": "Dinkun Chen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:SAMSUNG_PROTABLE_SSD_T5_EVO_8TB_%26_SAMSUNG_PROTABLE_SSD_T9_4TB_FRONT_SIDE.jpg"
+  },
+  {
+    "slug": "sandisk-extreme-portable-1tb",
+    "name": "SanDisk Extreme Portable SSD 1TB",
+    "file": "SanDisk Extreme Portable SSD 1 TB - front view.jpg",
+    "author": "ITEagle Europe - Sebastiaan Broekhoven",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:SanDisk_Extreme_Portable_SSD_1_TB_-_front_view.jpg"
+  }
+]
