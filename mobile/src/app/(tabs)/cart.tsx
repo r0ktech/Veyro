@@ -7,12 +7,15 @@ import { ProductImage } from "@/components/ProductImage";
 import { QuantityStepper } from "@/components/QuantityStepper";
 import { useAuth } from "@/lib/auth";
 import { useCart } from "@/lib/cart";
+import { MAX_CONTENT_WIDTH, useContentWidth } from "@/lib/layout";
 import { formatPrice, maxQuantity } from "@/lib/pricing";
 import { colors } from "@/lib/theme";
 
 export default function CartScreen() {
   const { session } = useAuth();
   const { lines, ready, subtotalCents, setQuantity, remove } = useCart();
+  const { isCompact } = useContentWidth();
+  const thumbWidth = isCompact ? 80 : 96;
 
   if (!session) {
     return (
@@ -40,13 +43,13 @@ export default function CartScreen() {
         renderItem={({ item: { product, quantity } }) => (
           <View style={styles.line}>
             <Link href={{ pathname: "/product/[slug]", params: { slug: product.slug } }} asChild>
-              <Pressable style={styles.thumb}>
+              <Pressable style={[styles.thumb, { width: thumbWidth }]}>
                 <ProductImage product={product} />
               </Pressable>
             </Link>
-            <View style={{ flex: 1, gap: 4 }}>
-              <Text style={styles.name} numberOfLines={2}>{product.name}</Text>
-              <Text style={styles.each}>{formatPrice(product.price_cents)} each</Text>
+            <View style={styles.lineBody}>
+              <Text style={styles.name} numberOfLines={2} maxFontSizeMultiplier={1.3}>{product.name}</Text>
+              <Text style={styles.each} maxFontSizeMultiplier={1.3}>{formatPrice(product.price_cents)} each</Text>
               <View style={styles.lineFooter}>
                 <QuantityStepper value={quantity} min={1} max={maxQuantity(product)} onChange={(q) => setQuantity(product, q)} />
                 <Pressable onPress={() => remove(product)} hitSlop={8}>
@@ -79,13 +82,16 @@ export default function CartScreen() {
 
 const styles = StyleSheet.create({
   screen: { flex: 1, backgroundColor: colors.paper },
-  list: { padding: 16, paddingBottom: 32 },
+  // Full width on phones, centred column on tablets.
+  list: { padding: 16, paddingBottom: 32, width: "100%", maxWidth: MAX_CONTENT_WIDTH, alignSelf: "center" },
   title: { fontSize: 26, fontWeight: "800", color: colors.ink, marginBottom: 16, paddingHorizontal: 0 },
   line: { flexDirection: "row", gap: 12, backgroundColor: colors.surface, borderRadius: 16, borderWidth: 1, borderColor: colors.line, padding: 12 },
-  thumb: { width: 96, borderRadius: 12, overflow: "hidden" },
+  // Fixed-size frame centred in the row, so the photo can't stretch or drift to the top.
+  thumb: { alignSelf: "center", borderRadius: 12, overflow: "hidden" },
+  lineBody: { flex: 1, minWidth: 0, gap: 4 },
   name: { fontSize: 15, fontWeight: "600", color: colors.ink },
   each: { fontSize: 13, color: colors.muted },
-  lineFooter: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 4 },
+  lineFooter: { flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", rowGap: 8, marginTop: 4 },
   remove: { color: colors.muted, fontSize: 13 },
   empty: { alignItems: "center", paddingTop: 60, paddingHorizontal: 24 },
   emptyTitle: { fontSize: 17, fontWeight: "700", color: colors.ink },

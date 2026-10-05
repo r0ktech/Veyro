@@ -7,6 +7,7 @@ import { useAuth } from "@/lib/auth";
 import { useCart } from "@/lib/cart";
 import { API_URL } from "@/lib/config";
 import { PAYMENT_METHODS } from "@/lib/pricing";
+import { MAX_CONTENT_WIDTH } from "@/lib/layout";
 import { colors } from "@/lib/theme";
 
 type Values = Record<
@@ -123,7 +124,7 @@ export default function CheckoutScreen() {
 }
 
 const styles = StyleSheet.create({
-  content: { padding: 16, gap: 16, paddingBottom: 48 },
+  content: { padding: 16, gap: 16, paddingBottom: 48, width: "100%", maxWidth: MAX_CONTENT_WIDTH, alignSelf: "center" },
   signedIn: { fontSize: 13, color: colors.muted },
   card: { backgroundColor: colors.surface, borderRadius: 16, borderWidth: 1, borderColor: colors.line, padding: 16, gap: 12 },
   cardTitle: { fontSize: 16, fontWeight: "700", color: colors.ink },

@@ -7,6 +7,7 @@ import { Button } from "@/components/Button";
 import { useAuth } from "@/lib/auth";
 import { formatPrice } from "@/lib/pricing";
 import { supabase } from "@/lib/supabase";
+import { MAX_CONTENT_WIDTH } from "@/lib/layout";
 import { colors } from "@/lib/theme";
 import type { Order } from "@/lib/types";
 
@@ -121,7 +122,7 @@ const styles = StyleSheet.create({
   logo: { fontSize: 30, fontWeight: "800", color: colors.ink },
   heading: { fontSize: 20, fontWeight: "700", color: colors.ink, marginTop: 24 },
   sub: { fontSize: 14, color: colors.muted, textAlign: "center", marginTop: 8 },
-  list: { padding: 16, paddingBottom: 32 },
+  list: { padding: 16, paddingBottom: 32, width: "100%", maxWidth: MAX_CONTENT_WIDTH, alignSelf: "center" },
   profile: { flexDirection: "row", alignItems: "center", gap: 14, backgroundColor: colors.surface, borderRadius: 16, borderWidth: 1, borderColor: colors.line, padding: 16 },
   avatar: { width: 56, height: 56, borderRadius: 28 },
   initial: { backgroundColor: colors.ink, alignItems: "center", justifyContent: "center" },

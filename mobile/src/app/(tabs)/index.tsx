@@ -2,11 +2,13 @@ import { useCallback, useEffect, useState } from "react";
 import { ActivityIndicator, FlatList, Pressable, RefreshControl, ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ProductCard } from "@/components/ProductCard";
+import { GRID_GAP, SCREEN_PADDING, useProductGrid } from "@/lib/layout";
 import { supabase } from "@/lib/supabase";
 import { colors } from "@/lib/theme";
 import { PRODUCT_SELECT, type Category, type Product } from "@/lib/types";
 
 export default function ShopScreen() {
+  const { columns, cardWidth } = useProductGrid();
   const [categories, setCategories] = useState<Category[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
   const [category, setCategory] = useState<string | null>(null);
@@ -78,11 +80,12 @@ export default function ShopScreen() {
         <FlatList
           data={products}
           keyExtractor={(p) => p.id}
-          numColumns={2}
+          key={`grid-${columns}`} // FlatList needs a fresh instance when the column count changes (e.g. rotation)
+          numColumns={columns}
           ListHeaderComponent={header}
           columnWrapperStyle={styles.row}
           contentContainerStyle={styles.list}
-          renderItem={({ item }) => <ProductCard product={item} />}
+          renderItem={({ item }) => <ProductCard product={item} width={cardWidth} />}
           ListEmptyComponent={<Text style={styles.empty}>No products found.</Text>}
           refreshControl={<RefreshControl refreshing={false} onRefresh={loadProducts} />}
           keyboardDismissMode="on-drag"
@@ -110,8 +113,8 @@ const styles = StyleSheet.create({
   chipActive: { backgroundColor: colors.ink, borderColor: colors.ink },
   chipText: { color: colors.inkSoft, fontSize: 13, fontWeight: "500" },
   chipTextActive: { color: "#fff" },
-  list: { paddingHorizontal: 16, paddingBottom: 24 },
-  row: { gap: 12, marginBottom: 12 },
+  list: { paddingHorizontal: SCREEN_PADDING, paddingBottom: 24 },
+  row: { gap: GRID_GAP, marginBottom: GRID_GAP },
   empty: { textAlign: "center", color: colors.muted, marginTop: 40 },
   error: { color: colors.danger, fontSize: 13 },
 });

@@ -4,6 +4,7 @@ import { ActivityIndicator, ScrollView, StyleSheet, Text, View } from "react-nat
 import { Button } from "@/components/Button";
 import { formatPrice, PAYMENT_METHODS } from "@/lib/pricing";
 import { supabase } from "@/lib/supabase";
+import { MAX_CONTENT_WIDTH } from "@/lib/layout";
 import { colors } from "@/lib/theme";
 import type { Order, OrderItem } from "@/lib/types";
 
@@ -90,7 +91,7 @@ function Row({ label, value, bold }: { label: string; value: string; bold?: bool
 }
 
 const styles = StyleSheet.create({
-  content: { padding: 16, gap: 16, paddingBottom: 40 },
+  content: { padding: 16, gap: 16, paddingBottom: 40, width: "100%", maxWidth: MAX_CONTENT_WIDTH, alignSelf: "center" },
   success: { backgroundColor: colors.success + "12", borderColor: colors.success + "40", borderWidth: 1, borderRadius: 16, padding: 16, gap: 4 },
   successTitle: { fontSize: 17, fontWeight: "700", color: colors.ink },
   successText: { fontSize: 14, color: colors.inkSoft },

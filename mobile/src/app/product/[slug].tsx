@@ -8,6 +8,7 @@ import { ProductImage } from "@/components/ProductImage";
 import { QuantityStepper } from "@/components/QuantityStepper";
 import { useAuth } from "@/lib/auth";
 import { useCart } from "@/lib/cart";
+import { MAX_CONTENT_WIDTH, useContentWidth } from "@/lib/layout";
 import { maxQuantity } from "@/lib/pricing";
 import { supabase } from "@/lib/supabase";
 import { colors } from "@/lib/theme";
@@ -20,6 +21,9 @@ export default function ProductScreen() {
   const [product, setProduct] = useState<Product | null | undefined>(undefined);
   const [qty, setQty] = useState(1);
   const [state, setState] = useState<"idle" | "busy" | "added">("idle");
+  const { contentWidth, height, isCompact } = useContentWidth();
+  // 4:3 photo, but never taller than 45% of the screen (landscape, tablets).
+  const imageHeight = Math.min((contentWidth * 3) / 4, height * 0.45);
 
   useEffect(() => {
     supabase
@@ -57,8 +61,8 @@ export default function ProductScreen() {
   return (
     <>
       <Stack.Screen options={{ title: product.category?.name ?? "" }} />
-      <ScrollView contentContainerStyle={{ paddingBottom: 120 }}>
-        <ProductImage product={product} />
+      <ScrollView contentContainerStyle={styles.scroll}>
+        <ProductImage product={product} aspectRatio={contentWidth / imageHeight} />
         <View style={styles.body}>
           <Text style={styles.brand}>{product.brand.toUpperCase()}</Text>
           <Text style={styles.name}>{product.name}</Text>
@@ -70,7 +74,7 @@ export default function ProductScreen() {
             <View style={styles.specs}>
               {specs.map(([k, v], i) => (
                 <View key={k} style={[styles.spec, i > 0 && styles.specBorder]}>
-                  <Text style={styles.specKey}>{k}</Text>
+                  <Text style={[styles.specKey, isCompact && { width: 90 }]}>{k}</Text>
                   <Text style={styles.specValue}>{v}</Text>
                 </View>
               ))}
@@ -98,6 +102,7 @@ export default function ProductScreen() {
 
 const styles = StyleSheet.create({
   missing: { textAlign: "center", marginTop: 60, color: colors.muted },
+  scroll: { paddingBottom: 140, width: "100%", maxWidth: MAX_CONTENT_WIDTH, alignSelf: "center" },
   body: { padding: 16, gap: 8 },
   brand: { fontSize: 12, letterSpacing: 1, color: colors.muted, fontWeight: "600" },
   name: { fontSize: 24, fontWeight: "800", color: colors.ink },
@@ -109,6 +114,6 @@ const styles = StyleSheet.create({
   specKey: { width: 110, color: colors.muted, fontSize: 14 },
   specValue: { flex: 1, color: colors.ink, fontSize: 14, fontWeight: "500" },
   bar: { position: "absolute", left: 0, right: 0, bottom: 0, backgroundColor: colors.surface, borderTopWidth: 1, borderTopColor: colors.line, paddingHorizontal: 16, paddingTop: 12 },
-  barRow: { flexDirection: "row", gap: 12, alignItems: "center", paddingBottom: 12 },
+  barRow: { flexDirection: "row", gap: 12, alignItems: "center", paddingBottom: 12, width: "100%", maxWidth: MAX_CONTENT_WIDTH, alignSelf: "center" },
   inCart: { fontSize: 12, color: colors.muted, marginBottom: 8 },
 });
